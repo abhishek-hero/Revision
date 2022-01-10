@@ -1,0 +1,20 @@
+// find subarray with max sum
+
+let arr = [-5, -1, 5, -3, -1, 2, 3, -6]
+let n = arr.length
+
+let max = 0
+let curr = 0
+
+for (let i = 0; i < n - 1; i++) {
+
+    curr += arr[i]
+
+    max = Math.max(max, curr)
+
+    if (curr < 0) {
+        curr = 0
+    }
+}
+
+console.log(max)

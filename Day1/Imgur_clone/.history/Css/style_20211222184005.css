@@ -1,0 +1,27 @@
+body {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #2e3035;
+
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    background: #474A51;
+    padding: 15px;
+
+
+}
+
+
+.navbar div {
+    height: 36px;
+
+}
+
+.navbar div:nth-child(1) {
+    display: flex;
+    width: 360px;
+}

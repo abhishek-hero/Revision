@@ -1,0 +1,39 @@
+body {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #2e3035;
+
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    background: #474A51;
+
+}
+
+
+.navbar>div {
+    width: 360px;
+    border: 1px solid red;
+    height: 36px;
+}
+
+.logo_div {
+    display: flex;
+    align-items: center;
+}
+
+.newPost {
+    background-color: #1BB76E;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.logo img {
+    height: 24px;
+    margin: 0 15px;
+}

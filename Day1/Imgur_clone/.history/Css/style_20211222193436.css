@@ -1,0 +1,87 @@
+body {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #2e3035;
+
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    background: #474A51;
+
+}
+
+
+.navbar>div {
+    border: 1px solid red;
+    height: 36px;
+}
+
+.logo_div {
+    display: flex;
+    align-items: center;
+    width: 360px;
+}
+
+.logo img {
+    height: 22px;
+    margin: 0 15px;
+}
+
+.newPost {
+    display: flex;
+    align-items: center;
+    background-color: #1BB76E;
+    height: 20px;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.newPost img {
+    margin-right: 10px;
+    height: 22px;
+    width: 22px;
+}
+
+.search_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1120px;
+}
+
+.search_div input {
+    width: 420px;
+    padding: 6px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    background-color: #727374;
+}
+
+.search_div input::placeholder {
+    color: #1b1a1a;
+}
+
+.signup_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 360px;
+}
+
+.lable_icon {
+    width: 22px;
+    height: 22px;
+}
+
+.lable_icon img {
+    width: 22px;
+    height: 22px;
+    object-fit: cover;
+}
