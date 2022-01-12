@@ -1,40 +1,12 @@
-
-// let arr = [1, 0, 0, 1, 0, 1, 1];
-// let n = arr.length
-const checkSubarray = (arr, n) => {
-
-    let hm = new Map()
-
-    let sum = 0
-    let maxLen = 0
-    let endIndex = -1
-
-    for (let i = 0; i < n; i++)
-        arr[i] = (arr[i] == 0) ? -1 : 1
-
-    for (let i = 0; i < n; i++) {
-
-        sum += arr[i]
-
-        if (sum == 0) {
-            maxLen = i + 1
-            endIndex = i
+const findPeak = (arr, n) => {
+    let i = 0;
+    while (i < n) {
+        if (arr[i] < arr[i + 1]) {
+            i++
+        } else {
+            return i
         }
-
-        if (hm.has(sum)) {
-            if (maxLen < i - hm[sum]) {
-                maxLen = i - hm[sum]
-                endIndex = i
-            }
-        }
-
-        else
-            hm[sum] = i
     }
-
-    for (let i = 0; i < n; i++)
-        arr[i] = (arr[i] == -1) ? 0 : 1
-    return maxLen
 }
 
 
@@ -42,19 +14,19 @@ function runProgram(input) {
     input = input.trim().split('\n')
     let test = +input[0]
     let line = 1
-
     for (let t = 0; t < test; t++) {
         let n = +input[line++]
         let arr = input[line++].trim().split(" ").map(Number)
-
-        console.log(checkSubarray(arr, n))
+        console.log(findPeak(arr, n))
     }
 }
 
 if (process.env.USERNAME === "abhim") {
-    runProgram(`1
-5
-1 0 0 1 0`);
+    runProgram(`2
+  3
+  10 20 11
+  5
+  1 3 6 5 4`);
 } else {
     process.stdin.resume();
     process.stdin.setEncoding("ascii");
